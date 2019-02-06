@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -61,6 +62,9 @@ class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewD
             let urlString = originalSize["url"] as! String
             // 4.
             let url = URL(string: urlString)
+            //AlamofireImage method to retrieve the image
+            cell.photo.af_setImage(withURL: url!)
+
         }
 
         
