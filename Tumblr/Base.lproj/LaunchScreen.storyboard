@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,63 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blossom_red" translatesAutoresizingMaskIntoConstraints="NO" id="4Fj-Bb-LW9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6td-3D-mxw"/>
+                                    <constraint firstAttribute="height" constant="667" id="hPc-Lg-ghw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-r1-Y58">
+                                <rect key="frame" x="57" y="78" width="260" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="NfN-m6-eeo"/>
+                                    <constraint firstAttribute="width" constant="260" id="kcp-aw-bah"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggx-EE-sl7">
+                                <rect key="frame" x="57" y="394" width="260" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.4637897855" blue="0.49355366039999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YXT-3m-EJG"/>
+                                    <constraint firstAttribute="width" constant="260" id="irg-0z-wYM"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tumblr">
+                                        <attributes>
+                                            <font key="NSFont" size="67" name="SnellRoundhand-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="4Fj-Bb-LW9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Ebn-3w-bhG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uw1-r1-Y58" secondAttribute="trailing" constant="58" id="Gwr-gm-5cD"/>
+                            <constraint firstItem="uw1-r1-Y58" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="LhM-xI-tbz"/>
+                            <constraint firstItem="ggx-EE-sl7" firstAttribute="top" secondItem="uw1-r1-Y58" secondAttribute="bottom" constant="66" id="Lo2-MX-ZIx"/>
+                            <constraint firstItem="4Fj-Bb-LW9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MNX-pB-IYa"/>
+                            <constraint firstItem="4Fj-Bb-LW9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P94-6z-aMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ggx-EE-sl7" secondAttribute="bottom" constant="203" id="Y0n-v9-UT0"/>
+                            <constraint firstItem="ggx-EE-sl7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="dcA-du-3UH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggx-EE-sl7" secondAttribute="trailing" constant="58" id="hgV-cd-s8n"/>
+                            <constraint firstItem="4Fj-Bb-LW9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ktN-9h-SzL"/>
+                            <constraint firstItem="uw1-r1-Y58" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="n3i-a2-nTF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blossom_red" width="187" height="270"/>
+        <image name="tumblr" width="400" height="400"/>
+    </resources>
 </document>
